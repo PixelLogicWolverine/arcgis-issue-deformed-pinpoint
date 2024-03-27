@@ -167,6 +167,20 @@ export class AppComponent implements OnInit {
             outFields: ['*'],
             title: '{name}',
         });
+
+        // reactiveUtils.watch(
+        //     () => this._webMap.popup.selectedFeature,
+        //     (newValue) => {
+        //         if (!newValue) {
+        //             // Do not execute the callback
+        //             return;
+        //         }
+        //         if (newValue.isAggregate) {
+        //             // this._webMap.popup.triggerAction(1);
+        //         }
+        //     }
+        // );
+
         return assetLayer;
     }
 
